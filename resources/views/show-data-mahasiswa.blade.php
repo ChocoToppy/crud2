@@ -21,6 +21,12 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="{{url('show-data-mahasiswa')}}">Daftar Data Mahasiswa</a>
                 </li>
+                <li class="nav-item">
+                    <form action="/logout" method="post">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-light me-2">Logout</button>
+                    </form>
+                </li>
                 </ul>
             </div>
         </div>

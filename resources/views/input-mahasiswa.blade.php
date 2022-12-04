@@ -31,7 +31,7 @@
         </div>
         <div class="card-body">
             <form name="add-blog-post-form" id="add-blog-post-form" method="post" action="{{url('kirim-mahasiswa')}}">
-            @csrf
+            @csrf 
                 <div class="form-group">
                     <label for="nim">Nim</label>
                     <input type="text" id="nim" name="nim" class="form-control @error('nim') is-invalid @enderror"  value="{{ old('nim') }}">
